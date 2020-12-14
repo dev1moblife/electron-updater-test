@@ -4,7 +4,12 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build:windows": "electron-builder --platform=win --x64 --ia32 --config=build-config.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clume/maisweb_client.git"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +17,7 @@
   "devDependencies": {
     "electron": "^11.0.4",
     "electron-builder": "^22.9.1",
+    "electron-packager": "^15.2.0",
     "electron-updater": "^4.3.5"
   }
 }

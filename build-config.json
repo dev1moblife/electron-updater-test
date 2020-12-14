@@ -1,0 +1,31 @@
+{
+	"appId": "teste.au",
+	"productName": "teste.au",
+	"directories": {
+		"output": "dist"
+	},
+	"extraResources": [
+		"favicon-32x32.png"
+	],
+	"icon": "icon.ico",
+	"win": {
+		"target": [
+			{
+				"target": "nsis",
+				"arch": [
+					"x64",
+					"ia32"
+				]
+			}
+		],
+		"publisherName": "Moblife Tecnologia e Comunicação Ltda."
+	},
+	"nsis": {
+		"installerIcon": "icon.ico",
+		"installerHeader": "header.bmp",
+		"installerSidebar": "sidebar.bmp",
+		"license": "LICENSE.rtf",
+		"oneClick": false,
+		"allowToChangeInstallationDirectory": true
+	}
+}
