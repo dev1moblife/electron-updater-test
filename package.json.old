@@ -1,6 +1,6 @@
 {
   "name": "mais-electron-updater-test",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "description": "",
   "author": {
     "name": "Moblife",
@@ -13,7 +13,7 @@
     "build:linux": "electron-builder --linux deb tar.xz --config=build-config.json",
     "build:windows": "electron-builder --win --config=build-config.json",
     "deploy:linux": "electron-builder build --linux deb tar.xz --publish always --config=build-config.json",
-    "publish": "electron-builder --linux --win -p always"
+    "publish": "build --linux -p always"
   },
   "repository": {
     "type": "git",
@@ -27,12 +27,10 @@
     "electron-packager": "^15.2.0"
   },
   "dependencies": {
-    "electron-log": "^1.3.0",
     "electron-updater": "^4.3.5"
   },
   "build": {
     "appId": "com.dev1moblife.maistesteau",
-    "win": {},
     "linux": {
       "packageCategory": "Utility",
       "target": [

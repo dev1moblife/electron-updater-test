@@ -1,24 +1,30 @@
 {
-	"appId": "teste.au",
-	"productName": "teste.au",
+	"appId": "maisau",
+	"productName": "maisau",
 	"directories": {
-		"output": "dist"
+		"output": "dist/${platform}/${channel}"
 	},
 	"extraResources": [
 		"favicon-32x32.png"
 	],
 	"icon": "icon.ico",
 	"win": {
+		"target": "nsis",
+		"arch": "x64",
+		"publisherName": "Moblife Tecnologia e Comunicação Ltda."
+	},
+	"linux": {
+		"maintainer": "Moblife",
+		"vendor": "Moblife",
+		"icon": "icon.png",
 		"target": [
 			{
-				"target": "nsis",
+				"target": "deb",
 				"arch": [
-					"x64",
-					"ia32"
+					"x64"
 				]
 			}
-		],
-		"publisherName": "Moblife Tecnologia e Comunicação Ltda."
+		]
 	},
 	"nsis": {
 		"installerIcon": "icon.ico",
